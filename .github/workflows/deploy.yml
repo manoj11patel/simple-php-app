@@ -1,0 +1,17 @@
+name: Deploy Simple PHP
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Test Message
+        run: echo "CI/CD is working"
